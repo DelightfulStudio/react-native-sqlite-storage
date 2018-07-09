@@ -63,7 +63,7 @@ function createPromiseRuntime() {
           }
         };
         let error = function(err){
-          console.log('error: ',fn,...args,arguments);
+          console.log('error: ',err,fn,...args,arguments);
           if (rejectOnError) {
             reject(err);
           }
